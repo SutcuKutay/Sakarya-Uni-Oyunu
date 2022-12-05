@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028334, g: 0.2257134, b: 0.30692226, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028346, g: 0.22571373, b: 0.30692244, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -658,8 +658,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 938915767}
-        m_TargetAssemblyTypeName: LoginMenu, Assembly-CSharp
-        m_MethodName: Enter
+        m_TargetAssemblyTypeName: FirebaseAuthManager, Assembly-CSharp
+        m_MethodName: Login
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1655,11 +1655,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 938915764}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 20fbd8d3302e62f418f56ad20112c68f, type: 3}
+  m_Script: {fileID: 11500000, guid: 5cfdf08ea9b101443827251b3693a2cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mailInput: {fileID: 1930009125}
-  passInput: {fileID: 2043738779}
+  dependencyStatus: 0
+  emailLoginField: {fileID: 1930009125}
+  passwordLoginField: {fileID: 2043738779}
 --- !u!1 &1202442221
 GameObject:
   m_ObjectHideFlags: 0
