@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "288211178633",
+    "firebase_url": "https://sakaryavr-bde5c-default-rtdb.firebaseio.com",
+    "project_id": "sakaryavr-bde5c",
+    "storage_bucket": "sakaryavr-bde5c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:288211178633:android:4ff477e6faca0311d76258",
+        "android_client_info": {
+          "package_name": "com.KuruSutOrganizasyon.SakaryaVR"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "288211178633-745d89d6ev4d9ob5f4smnr9b9prq247r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBtMYhGbAN-1RNS40S0Zu-g_wwBuyXtOc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "288211178633-745d89d6ev4d9ob5f4smnr9b9prq247r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

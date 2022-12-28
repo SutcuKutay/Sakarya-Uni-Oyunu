@@ -10,4 +10,10 @@ public class MainMenu : MonoBehaviour
         Application.Quit();
         Debug.Log("Oyundan Çýkýldý.");
     }
+
+    public void GuestEnter()
+    {
+        SceneManager.LoadScene("Game");
+        Debug.Log("Misafir olarak giriþ yapýldý.");
+    }
 }
