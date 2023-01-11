@@ -9,4 +9,8 @@ Bilgisayar Mühendisliği Tasarımı dersinin projesidir. Sakarya Üniversitesin
   - SakaryaUniOyunu, klasörünün içinde oyunun çalıştırılabilir ".exe" dosyası vardır.
   - SakaryaVR, klasörünün içinde Unity projesi bulunmaktadır.(Oyunumuza VR eklemeyi düşündüğümüz için ismi VR fakat şuan için VR özelliği yoktur.)
   
+## Emeği Geçenler:
+  - Kutay Sütçü
+  - İbrahim Atıf Kuru
+  
 ### Yapım Aşamasındadır!
