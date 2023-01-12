@@ -10,6 +10,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float acceleration = 20f;
     [SerializeField] Transform cameraTransform;
 
+    public AudioSource walkSound;
+
     CharacterController controller;
     Vector3 velocity;
     Vector2 look;
@@ -48,6 +50,14 @@ public class PlayerController : MonoBehaviour
     {
         UpdateGravity();
         UpdateMovement();
+        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D))
+        {
+            walkSound.enabled = true;
+        }
+        else
+        {
+            walkSound.enabled = false;
+        }
         UpdateLook();
     }
 

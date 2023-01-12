@@ -19,6 +19,8 @@ public class BilgisayarBilgiler : MonoBehaviour
     private string bilgisayarFakulteIsimi;
     private string bilgisayarFakulteOgrenciSayisi;
     private string bilgisayarFakulteSinifSayisi;
+    private string statuAdmin = "2";
+    private string bilgisayarFakultesi = "1";
 
 
 
@@ -79,17 +81,11 @@ public class BilgisayarBilgiler : MonoBehaviour
         }
 
         DataSnapshot ibrahim = gorevIki.Result;
-        bool check = false; 
         foreach (DataSnapshot user in ibrahim.Children)
         {
-
-            if (user.Child("Statu").Value.ToString() == 2.ToString())
+            if (user.Child("Fakulte").Value.ToString() == bilgisayarFakultesi)
             {
-                check = true;
-            }
-            if (check)
-            {
-                if (user.Child("Fakulte").Value.ToString() == 1.ToString())
+                if (user.Child("Statu").Value.ToString() == statuAdmin)
                 {
                     bolumBaskaniText.text = "Bölüm Baþkaný: " + user.Child("Kisi").Value.ToString();
                     bolumBaskaniEmailText.text = "Bölüm Baþkaný Email: " + user.Child("Email").Value.ToString();
