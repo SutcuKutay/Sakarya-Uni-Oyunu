@@ -16,5 +16,3 @@ Bilgisayar Mühendisliği Tasarımı dersinin projesidir. Sakarya Üniversitesin
 ## Emeği Geçenler:
   - Kutay Sütçü
   - İbrahim Atıf Kuru
-  
-### Yapım Aşamasındadır!
