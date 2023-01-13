@@ -16,6 +16,8 @@ public class MakineBilgiler : MonoBehaviour
     public TextMeshProUGUI bolumBaskaniText;
     public TextMeshProUGUI bolumBaskaniEmailText;
 
+    public AudioSource footsteps;
+
     private string makineFakulteIsimi;
     private string makineFakulteOgrenciSayisi;
     private string makineFakulteSinifSayisi;
@@ -28,9 +30,15 @@ public class MakineBilgiler : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            footsteps.mute = true;
             ShowPanel();
             UpdatePanel();
         }
+    }
+
+    public void FootstepSound()
+    {
+        footsteps.mute = false;
     }
 
     void ShowPanel()

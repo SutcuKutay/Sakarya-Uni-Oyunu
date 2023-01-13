@@ -5,6 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+
+    public AudioSource music;
+
     public void Quit()
     {
         Application.Quit();
@@ -15,5 +18,15 @@ public class MainMenu : MonoBehaviour
     {
         SceneManager.LoadScene("Game");
         Debug.Log("Misafir olarak giriþ yapýldý.");
+    }
+
+    public void FullScreen(bool isFull)
+    {
+        Screen.fullScreen = isFull;
+    }
+
+    public void Music(bool isPlay)
+    {
+        music.mute = !isPlay;
     }
 }

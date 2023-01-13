@@ -6,6 +6,12 @@ using TMPro;
 using Firebase;
 using Firebase.Auth;
 
+/*
+    FireBase'nin içinde "Authentication" sistemi var. Projemizde ilk baþta onu kullanýyorduk fakat kullanmayý býraktýk.
+    Kodlarýný silmek yerine olur da ileride kullanmayý düþünürüz diye burada býrakýyoruz....
+ */
+
+
 public class FirebaseAuthManager : MonoBehaviour
 {
     [Header("Firebase")]

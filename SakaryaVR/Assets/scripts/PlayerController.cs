@@ -48,17 +48,20 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        UpdateGravity();
-        UpdateMovement();
-        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D))
+        if (Time.timeScale == 1f)
         {
-            walkSound.enabled = true;
+            UpdateGravity();
+            UpdateMovement();
+            UpdateLook();
+            if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D))
+            {
+                walkSound.enabled = true;
+            }
+            else
+            {
+                walkSound.enabled = false;
+            }
         }
-        else
-        {
-            walkSound.enabled = false;
-        }
-        UpdateLook();
     }
 
     void UpdateGravity()

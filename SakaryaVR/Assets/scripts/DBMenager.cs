@@ -37,7 +37,7 @@ public class DBMenager : MonoBehaviour
         if (dependencyStatus == DependencyStatus.Available)
         {
             usersRef = FirebaseDatabase.DefaultInstance.GetReference("SAU");
-            Debug.Log("SAU veritabanina baglanildi.");
+            Debug.Log("Firebase veritabanina baglanildi.");
         }
 
         else
@@ -74,10 +74,6 @@ public class DBMenager : MonoBehaviour
             {
                 check = true;
             }
-            else
-            {
-                Debug.Log("Email adresi bulunamadý.");
-            }
             if (check)
             {
                 if (user.Child("Sifre").Value.ToString() == passInput.text)
@@ -88,7 +84,6 @@ public class DBMenager : MonoBehaviour
                 else
                 {
                     check = false;
-                    Debug.Log("Þifre Hatalý.");
                 }
             }
         }

@@ -15,6 +15,8 @@ public class theology : MonoBehaviour
     public TextMeshProUGUI bolumBaskaniText;
     public TextMeshProUGUI bolumBaskaniEmailText;
 
+    public AudioSource footsteps;
+
     private string ilahiyatFakulteIsimi;
     private string ilahiyatFakulteOgrenciSayisi;
     private string ilahiyatFakulteSinifSayisi;
@@ -27,9 +29,15 @@ public class theology : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            footsteps.mute = true;
             ShowPanel();
             UpdatePanel();
         }
+    }
+
+    public void FootstepSound()
+    {
+        footsteps.mute = false;
     }
 
     void ShowPanel()

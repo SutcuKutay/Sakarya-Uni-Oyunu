@@ -9,7 +9,6 @@ public class InGameMenu : MonoBehaviour
     public GameObject pauseMenu;
     
 
-    // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
@@ -39,6 +38,11 @@ public class InGameMenu : MonoBehaviour
         pauseMenu.SetActive(true);
         Time.timeScale = 0f;
         isGamePaused = true;
+    }
+
+    public void SetQuality(int quality)
+    {
+        QualitySettings.SetQualityLevel(quality);
     }
 
     public void ShowMouseCursor()
